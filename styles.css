@@ -191,6 +191,9 @@ img {
     margin: 20px;
 }
 
+img:not(.carousel-item img):hover {
+    transform: scale(1.2);
+}
 
 
 ul {
@@ -293,9 +296,11 @@ display: block;
   color: #cfd2d6;
   text-decoration: none;
 }
+
 .footer-menu ul li a:hover{
   color: #27bcda;
 }
+
 
 @media (max-width:500px) {
 .footer-menu ul{
@@ -303,4 +308,12 @@ display: block;
   margin-top: 10px;
   margin-bottom: 20px;
 }
+}
+
+button.carousel-control-prev,
+button.carousel-control-next {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: transparent !important;
 }
