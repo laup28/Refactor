@@ -1,0 +1,33 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navbar-brand img {
+    width: 30px;
+    height: auto;
+}
+
+.card img {
+    width: 1000px;
+    height: auto;
+} 
+
+
+.carousel-caption {
+    color: black; 
+}
+
+
+.carousel-caption h5, .carousel-caption p {
+    color: rgb(255, 255, 255);
+    text-shadow: none; 
+}
+
+
+
+
+
