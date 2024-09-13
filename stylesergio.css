@@ -1,0 +1,36 @@
+.form-init {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda la pantalla */
+    text-align: center; /* Centra el texto */
+    background-image: url('https://i.pinimg.com/736x/81/d2/7f/81d27f93dc0af1df6ebcba895211cd31.jpg'); /* Cambia esta URL a tu imagen */
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    color: white; /* Para que el texto sea legible sobre la imagen */
+    margin-bottom: 20px;
+  }
+
+  .h1-form {
+    font-size: 2.5rem;
+    color: #bfff00; /* Color del título */
+  }
+
+  .p-form {
+    font-size: 1.2rem;
+    max-width: 600px; /* Para limitar el ancho del párrafo */
+    background-color: rgba(180, 176, 176, 0.5); /* Fondo semitransparente para mejorar la legibilidad */
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .strong-form {
+    color: #bfff00; /* Resalta el texto */
+  }
+
+  form{
+    margin-bottom: 20px;
+    
+  }
