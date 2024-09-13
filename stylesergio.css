@@ -20,7 +20,7 @@
 
   .p-form {
     font-size: 1.2rem;
-    max-width: 600px; /* Para limitar el ancho del párrafo */
+    max-width: 500px; /* Para limitar el ancho del párrafo */
     background-color: rgba(180, 176, 176, 0.5); /* Fondo semitransparente para mejorar la legibilidad */
     padding: 10px;
     border-radius: 5px;
