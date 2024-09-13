@@ -1,78 +1,143 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contáctenos - Desarrolladores Junior Full Stack</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Contáctenos - Ruta 66</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        header {
+            background-color: #31383f;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .footer-content {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer-bottom {
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contactenos.html">Contacto</a></li>
-                <li><a href="quien.html">Sobre Nosotros</a></li>
-                <li style="float:right"><a class="active" href="#">Desarrolladores Junior Full Stack</a></li>
-            </ul>
-        </nav>
+        
     </header>
 
-    <section class="contact">
-        <h2>Contáctenos</h2>
-        <p>¿Tienes alguna pregunta o deseas colaborar con nosotros? Completa el formulario a continuación y nos pondremos en contacto contigo lo antes posible.</p>
+    <div class="container mt-5">
+        <section class="contact mb-5">
+            <h2>Contáctenos</h2>
+            <p>¿Tienes alguna pregunta o deseas colaborar con nosotros? Completa el formulario a continuación y nos
+                pondremos en contacto contigo lo antes posible.</p>
 
-        <form class="contact-form">
-            <div class="form-group">
-                <label for="name">Nombre</label>
-                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Correo Electrónico</label>
-                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Mensaje</label>
-                <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
-            </div>
-            <button type="submit">Enviar Mensaje</button>
-        </form>
-    </section>
+            <form class="contact-form">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Tu correo electrónico" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea id="message" class="form-control" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+            </form>
+        </section>
 
-    <section class="team-contacts">
-        <h2>Información de Contacto del Equipo</h2>
-        <div class="contact-details">
-            <h3>Sergio Fontalvo</h3>
-            <p>Teléfono: +1 555-123-4567</p>
-            <p>Email: sergio.fontalvo.@falsocorreo.com</p>
-        </div>
-        <div class="contact-details">
-            <h3>Camila Jimenez</h3>
-            <p>Teléfono: +1 555-234-5678</p>
-            <p>Email: camila.jimenez@falsocorreo.com</p>
-        </div>
-        <div class="contact-details">
-            <h3>Jhonatan.lopez</h3>
-            <p>Teléfono: +1 555-345-6789</p>
-            <p>Email: jhonatan.lopez@falsocorreo.com</p>
-        </div>
-        <div class="contact-details">
-            <h3>Yecibeth.Rivera</h3>
-            <p>Teléfono: +1 555-345-6789</p>
-            <p>Email: yecibeth.rivera@falsocorreo.com</p>
-        </div>
-    </section>
-
-    <div class="footer-content">
-        <h3>Autores del sitio web</h3>
-        <p> Camila Jimenez<br>
-            Jhonatan Lopez<br>
-            Sergio Fontalvo<br>
-            Yecibeth Rivera <br></p>
+        <section class="team-contacts mb-5">
+            <h2>Información de Contacto del Equipo</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Sergio Fontalvo</h3>
+                            <p class="card-text">Teléfono: +1 555-123-4567</p>
+                            <p class="card-text">Email: sergio.fontalvo.@falsocorreo.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Camila Jimenez</h3>
+                            <p class="card-text">Teléfono: +1 555-234-5678</p>
+                            <p class="card-text">Email: camila.jimenez@falsocorreo.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Jhonatan Lopez</h3>
+                            <p class="card-text">Teléfono: +1 555-345-6789</p>
+                            <p class="card-text">Email: jhonatan.lopez@falsocorreo.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Yecibeth Rivera</h3>
+                            <p class="card-text">Teléfono: +1 555-345-6789</p>
+                            <p class="card-text">Email: yecibeth.rivera@falsocorreo.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Alejandra Urrea</h3>
+                            <p class="card-text">Teléfono: +1 555-345-6789</p>
+                            <p class="card-text">Email: alejandra.urrea@falsocorreo.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
     </div>
-    <div class="footer-bottom">
-        <p><strong>Nombre del proyecto: Blog de motos</strong> <a href="index.html"></a> nuestro blog </p>
-    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Autores del sitio web</h3>
+            <p>Camila Jimenez<br>
+                Jhonatan Lopez<br>
+                Sergio Fontalvo<br>
+                Yecibeth Rivera<br>
+                Alejandra Urrea</p>
+        </div>
+
+        <div class="footer-bottom">
+            <p><strong>Nuestro Blog</strong> <a href="index.html" class="text-white text-decoration-none">Ruta 66</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
